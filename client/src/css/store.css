@@ -1,0 +1,258 @@
+/* Globle */
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* margin-left: -8px; */
+    
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif,"SF Pro Display";
+    /* font-family: 'San Francisco', sans-serif; */
+    /* src: url("SanFranciscoFont-master/SanFranciscoDisplay-Black.otf") format("opentype"); */
+    /* src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); */
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    margin-top: 44px!important;
+    background-color: #f5f5f7;
+}
+
+.store-title{
+    position: relative;
+    color: #1d1d1F;
+    padding: 80px 0 ;
+    max-width: 640px;
+    margin: auto 414px;
+    min-height: 100px;
+}
+
+.store-title h1{
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline;
+}
+
+.sub-title{
+    display: flex;
+    margin: auto 414px;
+}
+
+.sub-title h2{
+    font-size: 28px;
+    color: #1d1d1F;
+}
+
+.sub-title h2:nth-last-child(1){
+    font-size: 28px;
+    color: #6e6e73;
+}
+
+/* card */
+.mySwiper{
+    height: 520px ;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin: auto 414px;
+}
+
+.swiper-slide {
+    position: relative;
+    font-size: 18px;
+    background: #fff;
+    background-color: #fff;
+    border-radius: 18px;
+    margin-right: 20px;
+    height: 480px!important;
+    width: 398px!important;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: auto;
+    overflow: hidden;
+    white-space: normal;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+
+
+}
+
+.swiper-slide:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: scale(1.05)!important;
+}
+
+.swiper {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.cards{
+    width: 100%;
+    vertical-align: top;
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin: auto 414px;
+}
+
+.card-content{
+    display: flex;
+    background-color: #fff;
+    border-radius: 18px;
+    margin-right: 20px;
+    height: 480px;
+    width: 398px!important;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    white-space: normal;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.card-content:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: scale(1.01);
+}
+
+.card-title{
+    padding-top: 30px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.card-sub-title{
+    font-size: 28px;
+}
+
+.card-sub-title h3{
+    margin-top: 4.8px;
+    margin-bottom: 9px;
+}
+
+    
+.eyebrow{
+    font-size: 12px;
+    color: #bf4800;
+}
+
+.card-image{
+    margin: 28.578px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img{
+    /* display: block; */
+    height: 100%;
+    width: auto;
+}
+
+.rf-hcard-content-swatchescontainer{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+.rf-hcard-content-colorimage{
+    display: inline-flex;;
+    margin-right: 6px;
+    height: 12px;
+    width: 12px;
+}
+
+.card-botton-title{
+    padding-top: 0;
+    position: static;
+    margin-top: auto;
+    display: flex;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 1.28577;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    
+}
+
+.card-botton-content{
+    width: 273.781px;
+}
+
+.buy{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    min-width: 28px;
+    padding: 8px 16px;
+    border-radius: 980px;
+    background: #fff;
+    transition: opacity .3s;
+    /* color: #fff; */
+    /* --sk-button-margin-horizontal: 14px; */
+    /* --sk-button-margin-vertical: 14px; */
+    /* border-color: none; */
+}
+
+.buy:hover{
+    opacity: .8;
+}
+
+/* .macbookair{ */
+    /* width: 1000px!important; */
+/* } */
+
+.macbookair .card-image img{
+    height: auto;
+    width: 100%;
+
+}
+
+.macbookpro13 .card-image img{
+    height: auto;
+    width: 100%;
+}
+
+.apple-watch-series-7 .card-image img{
+    height: auto;
+    width: 100%;
+}
+
+.iPad-Air .card-image img{
+    height: auto;
+    width: 100%;
+}
+
+.swiper-button-next::after{
+    /* content: ""!important; */
+    transition: transform 0.5s ease-in, opacity 0.7s cubic-bezier(0.15, 0, 0.2, 1) 0.1s!important;
+}
+
+.swiper-wrapper{
+    /* transition-duration: 0ms; */
+    /* transform: translate3d(400.667px, 0px, 0px)!important; */
+    margin-left: -210px;
+    height: 550px !important;
+}
+
+.swiper-pagination{
+    display: none;
+}

@@ -1,0 +1,520 @@
+/* Globle */
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    padding-top: 30px;
+    margin: 0;
+    margin-top: 44px;
+    background-color: #fff;
+}
+
+.member_name{
+    padding-top: 14px;
+    background-color: #f5f5f7;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 28px;
+}
+
+.member_name div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.member_name div h1{
+    flex: 1;
+}
+
+.rs-account-sign-out{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #06c;
+}
+
+.rs-account-sign-out:hover{
+    text-decoration: underline;
+}
+
+
+.member_name_header{
+    border-top: #dcdcdd 1px solid;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+.member_name_header span{
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 510;
+    letter-spacing: .004em;
+    padding-top: 59px;
+}
+
+.user_device{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 33px;
+}
+
+.user_device h2{
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 510;
+    letter-spacing: .004em;
+}
+
+.email_title{
+    margin-top: 10px;
+    display: block;
+}
+
+.email_title{
+    font-size: 17px;
+    text-decoration: none;
+    color: #1D1D1F;
+}
+
+.user_device_image{
+    margin-top: 13.6px;
+    overflow-y: hidden;
+    background-color: #fbfbfd;
+    position: relative;
+    height: 240px;
+    width: 405px;
+}
+
+.user_device_image img{
+    max-height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: auto;
+}
+
+.device_content{
+    margin-top: 20px;
+    padding: 0 10px;
+    max-width: 320px;
+}
+
+.product_name{
+    padding-top: 3px;
+    font-size: 17px;
+    color: #1D1D1F;
+}
+
+.device_content a{
+    color: #06c;
+    font-size: 17px;
+}
+
+.device_content a span:hover{
+    text-decoration: underline;
+}
+
+/* swiper
+.swiper {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f7;
+}
+
+.swiper-wrapper{
+    padding-bottom: 40px;
+    top: 39px;
+    z-index: 1;
+    margin-left: -230px;
+    
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 475px!important;
+    height: 250px!important;
+    margin-left: 10px!important;
+    margin-top: 0 !important;
+
+
+}
+
+.swiper {
+    width: 100%;
+    height: 350px;
+    margin: 20px auto;
+}
+
+/* swiper 字型 */
+.account_balance{
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+    color: #1d1d1f;
+    width: 392px;
+    height: 72px;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+.account_link_content h2{
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+    color: #1d1d1f;
+    width: 392px;
+    height: 72px;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.description{
+    font-size: 17px;
+    color: #1d1d1f;
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+/* 帳號設定 */
+.account_settings{
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+.account_settings_title h2{
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+}
+
+.column{
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 2em;
+}
+
+.column>h3{
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    word-wrap: break-word;
+
+}
+.setting-section-header h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.name{
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+}
+
+.address{
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+}
+
+.personal-info{
+    width: 735px;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+}
+
+.as-buttonlink span{
+    background: transparent;
+    border: 0;
+    font-size: 17px!important;
+    color: #06c;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    padding: 0;
+    vertical-align: inherit;
+    cursor: pointer;
+}
+
+.as-buttonlink span:hover{
+    text-decoration: underline;
+}
+
+/* 按鈕 */
+.setting-section-header+button{
+    font-size: 17px!important;
+    background: transparent;
+    border: 0;
+    color: #06c;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    padding: 0;
+    vertical-align: inherit;
+    cursor: pointer;
+}
+
+.setting-section-header+button:hover{
+    text-decoration: underline;
+
+}
+
+.address+button{
+    font-size: 17px!important;
+    background: transparent;
+    border: 0;
+    color: #06c;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    padding: 0;
+    vertical-align: inherit;
+    cursor: pointer;
+}
+
+.address+button:hover{
+    text-decoration: underline;
+}
+
+/* pop up */
+.openaccountinfo, .form-modelus{
+    /* display: none; */
+    padding: 0;
+    margin: 0;
+    background-color: rgba(50,50,50,.88);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-tap-highlight-color: transparent;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    position: fixed;
+    overflow: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 54px 0;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.form-container {
+    max-width: 734px;
+    padding: 20px;
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+
+}
+
+.form-container h1{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    padding-bottom: 16px;
+    line-height: 1;
+}
+
+
+.mem-form-textbox input[type=text],
+.mem-form-textbox input[type=password]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border-color: #d2d2d7;
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    height: 40px;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-bottom: .82353rem;
+    padding: 1.05882rem .94118rem 0;
+    text-align: left;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* 取消輸入框點入後的外框樣式 */
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.firstName_label{
+    position: relative;
+    color: #6e6e73;
+    font-size: 12px;
+    left: 10px;
+    top: -45px;
+
+
+}
+
+.mem-overlay-change{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mem-btn{
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    background: #0071e3;
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    min-width: 28px;
+    padding: 18px 31px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    white-space: normal;
+    display: inline-block;
+    border-color: transparent;
+}
+
+.cancel{
+    background: transparent;
+    border: 0;
+    color: #06c;
+    padding: 0;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    box-sizing: border-box;
+    display: block;
+    width: auto;
+    white-space: normal;
+    display: inline-block;
+    border-color: transparent;
+    margin-top: 12px;
+}
+
+.cancel:hover{
+    border-radius: 0;
+    text-decoration: underline;
+}
+
+/* X關閉樣式 */
+.rc-overlay-close{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    top: 56px;
+    left: 16px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+}
+
+.rc-overlay-closesvg{
+    background: #e8e8ed;
+    border-radius: 50%;
+    color: #6e6e73;
+    display: flex;
+    align-items: center;
+    height: 33px;
+    width: 36px;
+    outline: none;
+    position: relative;
+}
+
+.as-svgicon{
+    fill: currentColor;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 20px;
+}
+

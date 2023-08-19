@@ -1,0 +1,262 @@
+/* Globle */
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    padding-top: 30px;
+    margin: 0;
+    margin-top: 44px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+
+}
+
+.login-page{
+    padding-top: 14px;
+    background-color: #ffffff;
+    height: 160px;
+    width: 100%;
+    padding-bottom: 28px;
+}
+
+.login-page div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.login-page div h1{
+    flex: 1;
+}
+
+.rs-account-sign-up{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #000;
+}
+
+.sign-up{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #000;
+    opacity: .56;
+}
+.rs-account-sign-up{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #000;
+}
+
+.rs-account-sign-up:hover{
+    color: #06c;
+}
+
+.login-page_header{
+    border-top: #dcdcdd 1px solid;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+.landing{
+    padding-top: 60px;
+}
+
+.landing-top{
+    height: 552px;
+    width: 600px;
+    margin: auto;
+
+}
+
+.landing-interaction{
+    text-align: center;
+    justify-content: center;
+}
+
+.sign-in{
+    color: #494949;
+}
+
+.appleid{
+    font-size: 32px;
+}
+
+.appleid +p{
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.form-container {
+    max-width: 328px;
+    padding: 20px;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.form-textbox input[type=text],
+.form-textbox input[type=password]{
+    width: 100%;
+    padding: 15px;
+    margin: none;
+    border-color: #d2d2d7;
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    height: 56px;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 1.05882rem 1.56rem 0;
+    text-align: left;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-textbox input[type=text]{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.form-textbox input[type=password]{
+    margin-top: -15px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+/* 取消輸入框點入後的外框樣式 */
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.sign-in-firstName_label{
+    position: relative;
+    color: #6e6e73;
+    font-size: 12px;
+    left: -188px;
+    top: -70px;
+
+
+}
+
+.overlay-change{
+    position: absolute;
+    padding: 0;
+    bottom: 92px;
+    right:  70px;
+
+}
+
+.overlay-change button{
+    padding: 0;
+}
+
+/* sign in 樣式 */
+
+.btn {
+    display: inline-block;
+    border-radius: 50%;
+    border: transparent;
+    background-color:transparent;
+    width: 50px;
+    height: 50px;
+}
+
+/* 圓圈大小 */
+.arrow-right{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #494949;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow-right::after{
+    content: '';
+	display: inline-block;
+    margin-left: -0.2em;
+    margin-top: 6.3px;
+    width: .8em;
+    height: .8em;
+    border-top: 0.15em solid #494949;
+    border-right: 0.15em solid #494949;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* remember me checkbox */
+.remember-password span{
+    color: #494949;
+    font-size: 17px;
+}
+
+
+
+/* rs-chat */
+.rs-chat{
+    max-width: 980px;
+    height: auto;
+    margin: auto;
+    border-top: 1px solid #d2d2d7;
+    padding: 0;
+    text-align: left;
+
+}
+
+.rs-chat-container div{
+    font-size: 17px;
+    color: #1D1D1F;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+}
+
+/* apple-footer */
+#apple-footer{
+    color: #6e6e73;
+    background-color: #F5F5F7;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+}
+
+.copyright{
+    max-width: 980px;
+    text-align: center;
+    height: auto;
+    margin: auto;
+    position: relative;
+    line-height:50px;
+
+}
+
+.copyright span{
+    font-size: 12px;
+}

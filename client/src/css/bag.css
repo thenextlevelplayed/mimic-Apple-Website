@@ -1,0 +1,634 @@
+/* Globle */
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top: 30px;
+    margin: 0;
+    margin-top: 44px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+
+}
+/* apple-footer */
+#apple-footer{
+    color: #6e6e73;
+    background-color: #F5F5F7;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+}
+
+.copyright{
+    max-width: 980px;
+    text-align: center;
+    height: auto;
+    margin: auto;
+    position: relative;
+    line-height:50px;
+
+}
+
+.copyright span{
+    font-size: 12px;
+}
+
+html{
+    width: 100%;
+    height: auto;
+}
+/* when bag is empty */
+
+.bag-empty{
+    width: 100%;
+    height: auto;
+}
+
+.empty-modelus{
+    margin: auto;
+}
+
+.empty-title{
+    width: 980px;
+    padding-top: 50px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.empty-title h1{
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    padding-bottom: 2px;
+    font-weight: 500;
+    color: #1d1d1f;
+    margin-bottom: 0;
+}
+
+.empty-title p{
+    margin-top: .8em;
+    font-size: 20px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+    margin-bottom: 32px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.form-btn{
+    width: 360px;
+    margin-right: 15px;
+}
+
+.btn-empty{
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 980px;
+    background: #0071e3;
+    --sk-button-margin-horizontal: 14px;
+    --sk-button-margin-vertical: 14px;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-width: 28px;
+    padding: 18px 31px;
+    --sk-button-margin-horizontal: 22px;
+    --sk-button-margin-vertical: 22px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    --sk-button-margin-horizontal: 9px;
+    --sk-button-margin-vertical: 9px;
+    border-radius: 12px;
+    white-space: normal;
+    display: inline-block;
+
+}
+
+.sign-in a{
+    color: #fff;
+
+}
+
+.store{
+    background-color: #ebebeb;
+}
+
+.store a{
+    color: #000;
+}
+
+/* aidcaption */
+
+.aidcaption{
+
+    border-top: #dcdcdd 1px solid;
+    border-bottom: #dcdcdd 1px solid;
+    
+}
+
+.aidcaption-modelus{
+    width: 980px;
+    margin: auto;
+    color: #1d1d1f;
+    font-size: 17px;
+    padding: 21px;
+}
+
+/* shop */
+
+.shop{
+    border-bottom: #dcdcdd 1px solid;
+}
+
+.shop-modelus{
+    width: 980px;
+    margin: auto auto 48px ;
+    margin-top: 48px;
+}
+
+.shop-icon{
+    background: url("../../public/images/bag-item/apple-new-arrivals-checkout-201804.jfif");
+    width: 980px;
+    aspect-ratio: auto 980 / 400;
+    height: 400px;
+}
+
+.shop-text{
+    padding-top: 139px;
+    padding-left: 46px;
+    width: 400px;
+    text-align: center;
+    color: #1d1d1f;
+}
+
+.shop-title h2{
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+}
+
+.shop-content{
+    font-size: 17px;
+}
+
+.shop-text span{
+    color: #06c;
+    letter-spacing: inherit;
+    font-size: 17px;
+    padding-top: 15px;
+}
+
+.shop-text span:hover{
+    border-bottom: #06c solid 1px;
+}
+
+
+/* bag-review */
+.bag-empty{
+    width: 100%;
+    height: auto;
+}
+
+.Review-modelus{
+    margin: auto;
+}
+
+.Review-title{
+    width: 980px;
+    padding-top: 50px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.Review-title h1{
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    padding-bottom: 2px;
+    font-weight: 500;
+    color: #1d1d1f;
+    margin-bottom: 0;
+}
+
+.Review-title p{
+    margin-top: .8em;
+    font-size: 20px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+    margin-bottom: 32px;
+}
+
+ /* when bag is something inside */
+
+.banner{
+    width: 980px;
+    height: auto;
+    background-color: #F5F5F7;
+    border-radius: 15px;
+    margin: auto;
+    padding: 1.17647rem 1rem;
+
+
+}
+
+.as-icondetails{
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+
+}
+
+.as-icondetails-icon img{
+    width: 20px;
+    height: auto;
+    position: absolute;
+}
+
+.rs-installment-banner-description{
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    text-align: left;
+}
+
+.rs-installment-banner-content {
+    padding-left: 30px;
+}
+
+.item-info-content{
+    list-style: none;
+    margin: 4.17647rem 0 20px;
+}
+
+.bag-content{
+    list-style: none;
+    margin: 4.17647rem 0 20px;
+}
+
+.bag-items{
+    width: 980px;
+    margin: auto;
+}
+
+.bag-item-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 78px;
+    padding-bottom: 76px;
+    border-bottom: 1px solid #d2d2d7;
+}
+/* img */
+.iteminfo-image{
+    flex-basis: 25%;
+    max-width: 25%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    text-align: center;
+}
+.iteminfo-image img{
+    max-width: 203px;
+    max-height: 203px;
+    width: auto;
+    height: auto;
+    float: none;
+}
+
+
+.item-info-content{
+    flex-basis: 75%;
+    max-width: 75%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+.iteminfo-details{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+/* iteminfo-title */
+.iteminfo-title-wrapper{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.iteminfo-title{
+
+    margin-top: 0;
+    overflow-wrap: break-word;
+    display: inline-block;
+    font-size: 24px;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.16667;
+    font-weight: 500;
+    letter-spacing: .009em;
+    color: #1d1d1f;
+}
+
+/* iteminfo-quantity */
+.iteminfo-quantity{
+    width: 14%;
+}
+
+.quantity{
+    padding-left: 19px;
+    margin-top: -2px;
+}
+.quantity-wrapper{
+    display: inline-block;
+    position: relative;
+}
+
+.quantity-dropdown{
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 500;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f;
+    /* height: 1.41176rem; */
+    margin-bottom: 0;
+    padding: 0 0 0 5px;
+    border: 0;
+    display: inline-block;
+    background-color: transparent;
+}
+
+/* iteminfo-pricedetails */
+.iteminfo-pricedetails{
+    width: 36%;
+    margin-left: auto;
+}
+
+.iteminfo-price{
+    text-align: right;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 500;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f;
+}
+
+.iteminfo-price p{
+    margin-top: 0;
+}
+
+
+/* iteminfo-pricelinewrapper */
+.iteminfo-pricelinewrapper{
+    width: 99.3%;
+}
+
+.summary-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-lab{
+    z-index: 2;
+    padding-right: 20px;
+}
+
+.summary-lab {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    flex-grow: 1;
+}
+
+.summary-value p{
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    flex-grow: 1;
+}
+
+/* remove */
+.rs-iteminfo-remove{
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.as-buttonlink{
+    background-color: transparent;
+    border: 0;
+    color: #06c;
+    padding: 0;
+    vertical-align: inherit;
+    cursor: pointer;
+}
+
+.as-buttonlink:hover{
+    text-decoration:underline;
+}
+
+/* summary details */
+.rs-summary{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1020px;
+    height: auto;
+    margin-top: 41px;
+}
+
+.rs-summary-info{
+    flex-basis: 75%;
+    max-width: 75%;
+    margin-left: 28.1%;
+}
+
+.rs-summary-total{
+    border-top: #dcdcdd 1px solid;
+    padding-top: 20px;
+}
+
+.rs-summary-total .summary-lab,
+.rs-summary-total .summary-value p{
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 500;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f;
+}
+
+/* checkout */
+.checkout{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.checkout-info{
+    width: 1020px;
+    margin: auto;
+    margin-bottom: 100px;
+
+
+}
+
+.checkout-info>div{
+    flex-basis: 75%;
+    max-width: 75%;
+    margin-left: 28%;
+}
+
+
+.checkout-title{
+    padding: 66px 0 23px;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 500;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f;
+}
+
+.payment-way{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.pay-monthly{
+    padding-right: 13px;
+    display: flex;
+    flex-basis: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+
+}
+.pay-monthly-info{
+    border-radius: 12px;
+    background-color: #f5f5f7;
+    text-align: center;
+    padding: 24px 32px 28px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.pay-monthly-title{
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 500;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 14px 0;
+    text-align: center;
+}
+
+.checkout-btn button{
+    width: 300px;
+    float: none;
+    margin: 7px auto;
+
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 980px;
+    background: #0071e3;
+    color: #fff;
+    --sk-button-margin-horizontal: 14px;
+    --sk-button-margin-vertical: 14px;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-width: 28px;
+    padding: 18px 31px;
+    --sk-button-margin-horizontal: 22px;
+    --sk-button-margin-vertical: 22px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    --sk-button-margin-horizontal: 9px;
+    --sk-button-margin-vertical: 9px;
+    border-radius: 12px;
+    white-space: normal;
+    display: inline-block;
+    border-color: transparent;
+}
+
+.checkout-btn button:hover{
+    opacity: 0.97;
+}
+
+.pay-in-full{
+    display: flex;
+    flex-basis: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    padding-left: 13px;
+}
+
+.pay-in-full-info{
+    border-radius: 12px;
+    background-color: #f5f5f7;
+    text-align: center;
+    padding: 24px 32px 28px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.pay-in-full-title{
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 500;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 14px 0;
+}
+.rs-bag-actions-box-message{
+    margin-bottom: 28px;
+}

@@ -1,0 +1,1220 @@
+/* Globle */
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* margin-left: -8px; */
+    
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif,"SF Pro Display";
+    /* font-family: 'San Francisco', sans-serif; */
+    /* src: url("SanFranciscoFont-master/SanFranciscoDisplay-Black.otf") format("opentype"); */
+    /* src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); */
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    display: block; /* 呈現框的類型 inline/inline-block */
+    text-decoration: none; /* 無任何裝飾 overline/line-through/underline/underline overline*/
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0rem;
+}
+
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1400;
+    height: 4.4rem;
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(2rem); /* The backdrop-filter property is used to apply a graphical effect to the area behind an element. */
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:  center ;
+    margin: 0 -1rem;
+    margin-left: 0;
+}
+
+.nav-list-mobile{
+    display: none;
+}
+
+.nav-link{
+    font-size: 1.14rem;
+    color: #d7d7d7;
+    padding: 0px 2.3rem;
+    margin-left: 3px;
+    transition: color .8s; /* 動畫效果 */
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.nav-link-apple{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("../../public/images/icons/apple.svg") center no-repeat;
+    background-size: 1.36rem;
+}
+
+.nav-link-bag{
+    width: 1.4rem;
+    height: 4.4rem;
+    background: url("../../public/images/icons/bag.svg") center no-repeat;
+}
+
+.nav-link-search{
+    width: 1.5rem;
+    height: 4.4rem;
+    background: url("../../public/images/icons/search.svg") center no-repeat;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    border: 1px solid #d2d2d7;
+    border-radius: 18px;
+    display: none;
+    width: 286px;
+}
+
+.dropdown .dropbtn {
+    /* font-size: 16px;   */
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content ul {
+    list-style: none ;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.dropdown-content ul li{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #d2d2d7;
+    /* list-style: none ; */
+
+    /* list-style-image: url("../../public/images/icons/orders.png") ; */
+    /* list-style-position: outside; */
+}
+
+.bag-icon a{
+    border-top: none;
+	background-image: url("../../public/images/icons/bag\ \(1\).svg");
+	background-repeat: no-repeat;
+	background-position:-2px 11px;
+	background-size:21px 21px;
+}
+
+.Orders-icon a{
+	background-image: url("../../public/images/icons/orders.svg");
+	background-repeat: no-repeat;
+	background-position:-2px 11px;
+	background-size:21px 21px;
+}
+
+.Account-icon a{
+	background-image: url("../../public/images/icons/account.svg");
+	background-repeat: no-repeat;
+	background-position:-2px 11px;
+	background-size:21px 21px;
+}
+
+.Signin-icon a{
+	background-image: url("../../public/images/icons/signIn.svg");
+	background-repeat: no-repeat;
+	background-position:-2px 11px;
+	background-size:21px 21px;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+    color: #06c;
+    padding: 0px 2.3rem;
+    margin-left: 3px;
+    line-height: 44px;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* iphone 13 section */
+.iphone-13{
+    /* margin-top: 0; */
+    /* background: url("../../public/images/hero/iphone-11-pro/iphone_11_pro_large.jpg"); */
+    background: url("../../public/images/hero/iphone-13/iphone-13-large.jpg");
+    /* margin-top: 5rem; */
+}
+
+.title{
+
+    text-align: center;
+    padding-top: 12rem;
+}
+
+.title-heading{
+    margin-top: 0;
+    font-size: 5.6rem;
+    line-height: 1.07143;
+    letter-spacing: -.005rem;
+    margin-block-end: .8rem;
+}
+
+.title-sub-heading{
+    font-size: 2.65rem;
+    margin-top: 0rem;
+    margin-block-end: 1.5rem;
+
+}
+
+.cta{
+    text-align: center;    
+    margin-top: 0rem;
+}
+
+.cta-link{
+    color: #66bbff;
+    font-size: 2.1rem;
+    display: inline-block;
+}
+
+.cta-link:nth-child(2){
+    margin-top: 0;
+    margin-left: 2.6rem;
+}
+
+.cta-link:hover{
+    border-bottom: 2px solid #66bbff;
+}
+
+/* iphone 13 pro section */
+.iphone-13-pro{
+    background: url("../../public/images/hero/iphone-13-pro/iphone-13-pro-large.jpg");
+}
+
+.title-dark{
+    padding-top: 4.2rem;
+    color:#000;
+}
+
+.title-white{
+    padding-top: 4.2rem;
+    color:#fff;
+}
+
+.cta-link-darker{
+    color:#0070c9;
+}
+
+.cta-link-darker:hover{
+    border-color: #0070c9;
+}
+
+
+/* back-to-school-2022 section */
+.back-to-school-2022{
+    background: url("../../public/images/hero/back-to-school-2022/macbook-pro-13-large.jpg") center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 0;
+    /* padding-bottom: 1px; */
+} 
+
+
+
+/* .title-sub-heading-back-to-school-2022{
+    background-color: #f5f5f7;
+} */
+
+/* Move to the bottom of all section styles to keep consistent styles */
+.hero{
+    /* width: 100%; */
+    /* height: 100%; */
+    height: 66.5rem;
+    background-size: auto 45rem;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    border-top: .6rem solid #fff;
+    border-bottom: .6rem solid #fff;
+}
+
+.iphone-13{
+    height: 70rem;
+    border-top: none;
+}
+
+.iphone-13-pro{
+    background-size: auto 50.4rem;
+    border-bottom: none;
+
+}
+.back-to-school-2022{
+    border-top: none;
+    background-color: #f5f5f7;
+}
+
+/* my own work */
+.collection-container{
+    position: relative;
+    display: flex;
+}
+
+.collection-module{
+    width: 48%;
+    margin: 10px;
+
+}
+
+.collection-title{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.collection-title-heading{
+    margin-top: 0;
+    font-size: 5rem;
+    line-height: 1.07143;
+    letter-spacing: -.005rem;
+    margin-block-end: .8rem;
+}
+
+.collection-title-word{
+    height: 5rem;
+    margin: 0;
+    margin-top: -12px;
+    margin-bottom: 10px;
+}
+
+
+/* macbook-air */
+.macbook-air{
+    background: url("../../public/images/hero/macbook-air/mac-book-air-large.jpg") center no-repeat;
+    background-size: auto 50rem;
+    background-position: bottom center;
+    background-color:#fbfbfd;;
+}
+
+.macbook-air .collection-title .collection-title-word{
+    background: url("../../public/images/hero/m2/m2-large.jpg") center no-repeat;
+    background-size: auto ;
+}
+
+
+/* macbook-pro-13 */
+.macbook-pro-13{
+    background: url("../../public/images/hero/macbook-pro-13/mac-book-pro-13-large.jpg") center no-repeat;
+    background-size: auto 40rem;
+    background-color:#000;;
+}
+
+.macbook-pro-13 .collection-title .collection-title-word{
+    background: url("../../public/images/hero/m2/m2-black-large.jpg") center no-repeat;
+}
+
+/* watch */
+.watch .collection-title .collection-title-heading{
+    height: 10rem;
+    background: url("../../public/images/hero/watch/watch-series-7.jpg") no-repeat center;
+}
+.watch{
+    background: url("../../public/images/hero/watch/watch-large.jpg") center no-repeat;
+    background-color:#fbfbfd;;
+}
+
+/* ipad-air */
+.ipad-air .collection-title .collection-title-heading{
+    height: 10rem;
+    background: url("../../public/images/hero/ipadair/ipadair-word.jpg") center no-repeat;
+}
+
+.ipad-air{
+    background: url("../../public/images/hero/ipadair/ipadair-large.jpg") center no-repeat;
+    background-color: #000;
+}
+
+/* apple-pay */
+.apple-pay{
+    background: url("../../public/images/hero/apple-pay/apple-pay-large.jpg") no-repeat center;
+    background-size: auto;
+}
+
+/* apple-music */
+.apple-music{
+    background: url("../../public/images/hero/apple-music/apple-music.jpg") no-repeat center;
+    background-size: auto;
+}
+.collection-module{
+    margin: 10px 20px;
+    height: 73rem;
+    background-position: bottom center;
+}
+
+/* carousel */
+.carousel-module{
+    box-sizing: border-box;
+    border-style: solid;
+    overflow: visible;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    display: block;
+    position: relative;
+}
+
+.item-module{
+    left: 0;
+    right: 0;
+    margin: none;
+    padding: 0;
+
+
+}
+
+.item-1{
+    background: url("../../public/images/hero/item1/2500x1406.jpg") no-repeat center;
+}
+
+.item-2{
+    background: url("../../public/images/hero/item2/2500x1406.jpg") no-repeat center;
+}
+
+.item-3{
+    background: url("../../public/images/hero/item3/2500x1406.jpg") no-repeat center;
+}
+
+.item-4{
+    background: url("../../public/images/hero/item4/2500x1406.jpg") no-repeat center;
+}
+
+.item-5{
+    background: url("../../public/images/hero/item5/fnb__brvfy48gzsz6_large_2x.jpg") no-repeat center;
+}
+
+.item-6{
+    background: url("../../public/images/hero/item6/2500x1406.jpg") no-repeat center;
+}
+
+.item-7{
+    background: url("../../public/images/hero/item7/2500x1406.jpg") no-repeat center;
+}
+
+.item-8{
+    background: url("../../public/images/hero/item8/2500x1406.jpg") no-repeat center;
+}
+
+.item-9{
+    background: url("../../public/images/hero/item9/2500x1406.jpg") no-repeat center;
+}
+
+.item-10{
+    background: url("../../public/images/hero/item10/2500x1406.jpg") no-repeat center;
+}
+
+.item-11{
+    background: url("../../public/images/hero/item11/2500x1406.jpg") no-repeat center;
+}
+
+.item{
+    position: relative;
+    left: 16.2%;
+    width: 1250px;
+    height: 667.25px;
+    background-size: auto 105%;
+    margin:none ;
+    overflow-x: hidden;
+}
+
+/* stream now */
+.info-bottom{
+    position: absolute;
+    z-index: 1;
+    top:  572px;
+    left:6%;
+    border-radius: 25px;
+}
+
+.button-play{
+    position: absolute;
+    padding: 12px 16px;
+    color: #1e1e20;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: 15px;
+    font-weight:bold;
+    line-height: 1.3;
+    /* position: relative; */
+    z-index: 1;
+    background-color: #fefefe;
+    top:  0px;
+    left:0%;
+    border-radius: 25px;
+    transition: opacity .5s; /* 動畫效果 */
+}
+
+.button-play:hover{
+    opacity: .85;
+
+
+}
+
+.play-button-icon{
+    padding-left: 3rem;
+    top:0;
+    background: url("../../public/images/hero/item7/play-button.png") no-repeat center;
+    background-size: auto 15px;
+
+}
+/* stream now 後面文字 */
+.typography-shows-genre{
+    margin-top:5px;
+    margin-left: 190px;
+    color: #fefefe;
+    font-size: 21px;
+}
+
+.genre {
+    color: #fefefe;
+    font-size: 21px;
+    font-weight:bold;
+}
+
+.m-dot{
+    color: #fefefe;
+    font-size: 25px;
+    /* font-weight:bold; */
+    
+}
+
+/* ul previous next*/
+.paddlenav ul{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    /* height: 667.250px; */
+}
+
+.paddlenav ul li{
+    position: absolute;
+    height: 667.250px;
+    width: 264px;
+}
+.previous{
+    left: 0;
+    z-index: 1000;
+    /* background: url("../../public/images/hero/item11/2500x1406.jpg") no-repeat center; */
+}
+
+.next{
+    right: 0;
+    z-index: 1000;
+}
+
+/* 按鈕 */
+.arrow{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* 點點 */
+.dotnav-items {
+    margin: 12.5px 0 12.5px 0;
+    /* margin-top:; */
+    padding: 0;
+    display: flex;
+    list-style:none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 點點樣式 */
+.dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.dot:hover{
+    background-color: #c2c2c2;
+}
+
+/* click dot */
+/* .active, .dot:hover{ */
+    /* background-color: #707070; */
+/* } */
+
+
+/* 字體變不見 */
+.dotnav-items li a span{
+    display: none;
+
+}
+
+/* footer */
+.globalfooter{
+    --footer-background: #f5f5f7;
+    --footer-border-color: #d2d2d7;
+    --footer-text-color: #6e6e73;
+    --footer-link-color: #424245;
+    --footer-directory-title-color: #1d1d1f;
+    --footer-directory-title-color-hover: #000;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background: var(--footer-background);
+    color: var(--footer-text-color);
+    min-width: 1024px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    /* height: 100%; */
+    
+}
+
+.gf-content{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    padding-left: max(22px,env(safe-area-inset-left));
+    padding-right: max(22px,env(safe-area-inset-right));
+    padding-top: 17px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--footer-border-color);
+}
+.gf-content section ul li{
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    
+}
+.gf-content section ul li span{
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: inherit;
+}
+.gf-content ::after{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+    letter-spacing: normal;
+}
+
+
+/* global-nav */
+.gf-nav{
+    --footer-background: #f5f5f7;
+    --footer-border-color: #d2d2d7;
+    --footer-text-color: #6e6e73;
+    --footer-link-color: #424245;
+    --footer-directory-title-color: #1d1d1f;
+    --footer-directory-title-color-hover: #000;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background: var(--footer-background);
+    color: var(--footer-text-color);
+    min-width: 1024px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.gf-nav-content{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    padding-left: max(22px,env(safe-area-inset-left));
+    padding-right: max(22px,env(safe-area-inset-right));
+    padding-top: 17px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--footer-border-color);
+}
+
+
+
+.gf-nav-title li:nth-child(2n-1){
+    display: none;
+}
+
+#gf-nav-title-1 ~ #gf-nav-title-1:checked{
+    display:block;
+}
+
+
+/* RWD medium 前三個大圖*/
+@media screen and (max-width: 1068px){
+
+    .iphone-13{
+        background: url("../../public/images/hero/iphone-13/iphone-13-medium.jpg");
+        height: 64rem;
+        background-size: 90rem;
+        background-repeat: no-repeat;
+    }
+
+    .iphone-13-pro{
+        background: url("../../public/images/hero/iphone-13-pro/iphone-13-pro-medium.jpg");
+        height: 65rem;
+    }
+
+    .back-to-school-2022{
+        background-color: url("../../public/images/hero/back-to-school-2022/macbook-pro-13-medium.jpg");
+    }
+    
+    .hero{
+        /* height: 60rem; */
+        /* background-size: auto 30rem; */
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+
+            text-align: center;
+            padding-top: 6rem;
+    }
+
+    .title-heading{
+        /* margin-top: 0; */
+        font-size: 4.5rem;
+        /* line-height: 1.07143; */
+        /* letter-spacing: -.005rem; */
+        /* margin-block-end: .8rem; */
+    }
+
+    .title-sub-heading{
+        font-size: 2.4rem;
+    }
+    
+    .cta-link:nth-child(2){
+        margin-left: 2rem;
+    }
+
+    .collection-title{
+        text-align: center;
+        padding-top: 4rem;
+    }
+}
+
+/* RWD 1069px 兩個圖片一個row */
+@media screen and (max-width: 1069px) {
+    .collection-module{
+        margin: 10px 20px;
+        height: 47rem;
+        background-position: bottom center;
+    }
+    /* macbook-air */
+    .macbook-air{
+        background: url("../../public/images/hero/macbook-air/mac-book-air-medium.jpg") center no-repeat;
+        background-size: auto 28rem;
+        background-position: bottom center;
+        background-color:#fbfbfd;;
+    }
+
+    .macbook-air .collection-title .collection-title-word{
+        background: url("../../public/images/hero/m2/m2-medium.jpg") center no-repeat;
+        background-size: auto 3.8rem;
+    }
+    /* macbook-pro-13 */
+    .macbook-pro-13{
+        background: url("../../public/images/hero/macbook-pro-13/mac-book-pro-13-medium.jpg") center no-repeat;
+        background-size: auto 23.9rem;
+        background-position: bottom center;
+        background-color:#000;;
+    }
+
+    .macbook-pro-13 .collection-title .collection-title-word{
+        background: url("../../public/images/hero/m2/m2-black-medium.jpg") center no-repeat;
+        background-size: auto 3.8rem;
+    }
+
+    /* watch */
+    .watch .collection-title .collection-title-heading{
+        height: 4rem;
+        background: url("../../public/images/hero/watch/watch-series-7-medium.jpg") no-repeat center;
+        background-size: auto 5rem;
+    }
+    .watch{
+        background: url("../../public/images/hero/watch/watch-medium.jpg") center no-repeat;
+        background-color:#fbfbfd;;
+        background-size: auto 33rem;
+    }
+
+    /* ipad-air */
+    .ipad-air .collection-title .collection-title-heading{
+        height: 4rem;
+        background: url("../../public/images/hero/ipadair/ipadair-word-medium.jpg") center no-repeat;
+        background-size: auto 5rem;
+    }
+
+    .ipad-air{
+        background: url("../../public/images/hero/ipadair/ipadair-medium.jpg") center no-repeat;
+        background-color: #000;
+        background-size: auto 33rem;
+        margin-top: 0;
+    }
+    /* apple-pay */
+    .apple-pay{
+        background: url("../../public/images/hero/apple-pay/apple-pay-medium.jpg") no-repeat center;
+        height: 50rem;
+        background-size: auto 100%;
+        margin: 10px 6px;
+    }
+
+    /* apple-music */
+    .apple-music{
+        background: url("../../public/images/hero/apple-music/apple-music-medium.jpg") no-repeat center;
+        background-size: auto 100%;
+        height: 50rem;
+        margin: 10px 6px;
+    }
+
+    .collection-title-heading{
+        margin-top: 0;
+        font-size: 3rem;
+        line-height: 1.07143;
+        letter-spacing: -.005rem;
+        margin-block-end: .8rem;
+    }
+    
+    .collection-title-word{
+        margin-bottom: -5px;
+    }
+
+    .cta{
+        text-align: center;    
+        margin-top: 0rem;
+    }
+
+    .cta-link{
+        color: #66bbff;
+        font-size: 1.6rem;
+        display: inline-block;
+    }
+    
+    .cta-link:nth-child(2){
+        margin-top: 0;
+        margin-left: 2.6rem;
+    }
+
+    .title-sub-heading{
+        font-size: 1.8rem;
+        margin-top: 0rem;
+        margin-block-end: 1.5rem;
+    
+    }
+}
+
+/* RWD 735px 兩個圖片一個row */
+@media screen and (max-width: 735px) and (min-width: 0px){
+    body{
+        margin:0;
+    }
+    *::before,*::after{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+
+    .collection-container{
+        position: relative;
+        display:inline;
+    }
+    
+    .collection-module{
+        margin: 0;
+        height: 47rem;
+        width: 100%;
+    }
+    /* macbook-air */
+    .macbook-air{
+        background: url("../../public/images/hero/macbook-air/mac-book-air-small.jpg") center no-repeat;
+        background-size: auto 28rem;
+        background-position: bottom center;
+        background-color:#fbfbfd;;
+    }
+
+    .macbook-air .collection-title .collection-title-word{
+        background: url("../../public/images/hero/m2/m2-small.jpg") center no-repeat;
+        background-size: auto 3.8rem;
+    }
+    /* macbook-pro-13 */
+    .macbook-pro-13{
+        background: url("../../public/images/hero/macbook-pro-13/mac-book-pro-13-small.jpg") center no-repeat;
+        background-size: auto 23.9rem;
+        background-position: bottom center;
+        background-color:#000;;
+    }
+
+    .macbook-pro-13 .collection-title .collection-title-word{
+        background: url("../../public/images/hero/m2/m2-black-small.jpg") center no-repeat;
+        background-size: auto 3.8rem;
+    }
+
+    /* watch */
+    .watch .collection-title .collection-title-heading{
+        height: 4rem;
+        background: url("../../public/images/hero/watch/watch-series-7-small.jpg") no-repeat center;
+        background-size: auto 5rem;
+    }
+    .watch{
+        background: url("../../public/images/hero/watch/watch-small.jpg") center no-repeat;
+        background-color:#fbfbfd;;
+        background-size: auto 33rem;
+    }
+
+    /* ipad-air */
+    .ipad-air .collection-title .collection-title-heading{
+        height: 4rem;
+        background: url("../../public/images/hero/ipadair/ipadair-word-small.jpg") center no-repeat;
+        background-size: auto 5rem;
+    }
+
+    .ipad-air{
+        background: url("../../public/images/hero/ipadair/ipadair-small.jpg") center no-repeat;
+        background-color: #000;
+        background-size: auto 33rem;
+        margin-top: 0;
+    }
+    /* apple-pay */
+    .apple-pay{
+        height: 51rem;
+        background: url("../../public/images/hero/apple-pay/apple-pay-small.jpg") no-repeat center;
+        background-size: auto 100%;
+        background-position: bottom center;
+        margin: 10px 0 10px ;
+    }
+
+    /* apple-music */
+    .apple-music{
+        height: 51.2rem;
+        background: url("../../public/images/hero/apple-music/apple-music-small.jpg") no-repeat center;
+        background-size: auto 100%;
+    }
+
+    .collection-module{
+        background-position: bottom center;
+    }
+
+    .collection-title-heading{
+        margin-top: 0;
+        font-size: 3rem;
+        line-height: 1.07143;
+        letter-spacing: -.005rem;
+        margin-block-end: .8rem;
+    }
+    
+    .collection-title-word{
+        margin-bottom: -5px;
+    }
+
+    .cta{
+        text-align: center;    
+        margin-top: 0rem;
+    }
+
+    .cta-link{
+        color: #66bbff;
+        font-size: 1.6rem;
+        display: inline-block;
+    }
+    
+    .cta-link:nth-child(2){
+        margin-top: 0;
+        margin-left: 2.6rem;
+    }
+
+    .title-sub-heading{
+        font-size: 1.8rem;
+        margin-top: 0rem;
+        margin-block-end: 1.5rem;
+    
+    }
+}
+/* nav-bar */
+@media screen and (max-width: 834px){
+    
+    header{
+        height: 4.8rem;
+        transition: background .36s cubic-bezier(0.32,0.08,0.24,1),
+                    height .56s cubic-bezier(0.32, 0.08,0.24,1);
+    }
+
+    header .container{
+        padding: 0;
+    }
+
+    .iphone-13{
+        margin-top: 4.8rem;
+    }
+
+
+    .nav-list{ 
+        margin-top: 0;
+    }
+
+    .nav-list-mobile{
+        padding-left: 0;
+        display: flex; /* 顯示使用手機模式的導引列內容 */
+    }
+
+    .nav-item{
+        width: 4.8rem;
+        height: 4.8rem;
+        margin: 10px;
+        display: flex;
+
+    }
+
+    .nav-item-hidden{
+        display:none;
+    }
+
+
+    .mobile-meun{
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /* 製作兩槓 */
+    .line{
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    /* 製作兩槓 */
+    .line-top{
+        margin-top: 3px;
+    }
+
+    /* 製作兩槓 */
+    .line-bottom{
+        margin-top: -9px;
+    }
+
+    /* 導覽列 兩槓便交叉 */
+    .active .line-top{
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    /* 導覽列 交叉變回兩槓 */
+    .active .line-bottom{
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    /* 當header被click時，出現背景黑色 */
+    header.active{
+        height: 100%;
+        background-color: #000;
+    }
+/* 當打開導引列後，apple log出現在最上面 */
+    .nav-link-apple{
+        width: 1.8rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav-link-bag{
+        width: 1.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+
+    /* 將所有導引列的元素設定relative */
+    .nav{
+        position: relative;
+    }
+
+    /* 確定打開導引列後的內容設定在居中，上下 */
+    .nav-link{
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+    /* 設定導引列後的內容 */ 
+    .nav-list-larger{
+        position: fixed;
+        top:0;
+        left:0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+    }
+
+    /* 打開導引列後的導引列長寬透明度 並可以看到且點擊*/
+    .active .nav-list-larger{
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 設定打開導引列後的右邊包包icon經過0.3s 透明度100% */
+    .active .nav-link-bag{
+        opacity: 0;
+        transition: opacity .3s;
+    }
+    /* 設定打開導引列後的每個內容由左邊開始，加上灰色底線 */
+    .nav-list-larger .nav-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255,255,255,.1);
+    }
+
+    /* 設定打開導引列後最後搜的尋欄底線取消 */
+    .nav-list-larger .nav-item:nth-child(11){
+        border-bottom: none;
+    }
+
+    .active .nav-list-larger .nav-item{
+        animation: fadeIn 1s ease-in;
+    }
+
+    /* 製作動畫淡入 */
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+
+        to{
+            opacity: 1;
+        }
+        
+    }
+
+
+    
+}
+/* RWD small 前三個大圖 */
+@media screen and (max-width: 734px) and (min-width: 0px){
+    .iphone-13{
+        background: url("../../public/images/hero/iphone-13/iphone-13-small.jpg");
+        height: 50.5rem;
+        background-size: 72rem;
+        background-repeat: no-repeat;
+    }
+
+    .iphone-13-pro{
+        background: url("../../public/images/hero/iphone-13-pro/iphone-13-pro-small.jpg");
+        height: 50rem;
+        background-repeat: no-repeat;
+
+    }
+
+    .back-to-school-2022{
+        background-color: url("../../public/images/hero/back-to-school-2022/macbook-pro-13-small.jpg");
+        margin-top: .5rem;
+        height: 50rem;
+        background-size: 120rem;
+    }
+
+    .hero{
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+
+            text-align: center;
+            padding-top: 4rem;
+    }
+
+    .title-heading{
+        font-size: 3rem;
+    }
+
+    .title-sub-heading{
+        font-size: 1.8rem;
+    }
+
+    .cta{
+        margin-top: 1rem;
+    }
+
+    .cta-link{
+        font-size: 1.7rem;
+    }
+    
+    .cta-link:nth-child(2){
+        margin-left: 2rem;
+    }
+    
+}
+
+
+
+
