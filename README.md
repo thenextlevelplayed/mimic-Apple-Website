@@ -1,5 +1,5 @@
 # mimic-Apple-Website
-## please follow the instruction to open
+## please follow the instruction to launch
 
 1.git clone git@github.com:thenextlevelplayed/mimic-Apple-Website.git
 
