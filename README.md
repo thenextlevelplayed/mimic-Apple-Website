@@ -1,7 +1,7 @@
 # mimic-Apple-Website
 ## please follow the instruction to open
 
-1.git clone git@github.com:thenextlevelplayed/abc.git
+1.git clone git@github.com:thenextlevelplayed/mimic-Apple-Website.git
 
 2.cd server
 
