@@ -61,7 +61,7 @@
 
 │      └── store.js - JavaScript library Swiper in Store.js
 
-│   ├── pages - html template
+│   ├── pages - html template with JSX
 
 │   ├── index.js - React Router
 
